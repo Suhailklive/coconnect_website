@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoConnect - Your Personalized AI Sales Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary-color: #0055FF;
+            --text-color: #183B56;
+            --background-color: #F9FBFE;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0044CC;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0055FF 0%, #8C61FF 100%);
+        }
+        
+        .hero-hello {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-title {
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            max-height: 70vh;
+        }
+        
+        @media (min-width: 1024px) {
+            .hero-hello {
+                font-size: 5rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <header class="bg-white border-b border-gray-200 fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">CoConnect</div>
+            <div>
+                <a href="#" class="btn-primary">Get a Demo</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <section class="gradient-bg min-h-screen flex items-center">
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-5/12 text-white mb-12 lg:mb-0">
+                    <h1 class="mb-4">
+                        <span class="hero-hello font-bold block">Hello,</span>
+                        <span class="hero-title font-bold block">Personalized AI Sales Engineer</span>
+                    </h1>
+                    <p class="text-xl mb-8">Providing Real-Time Product Information and AI Automations</p>
+                    <a href="#" class="btn-primary bg-white text-blue-600 hover:bg-gray-100">Start Free Trial</a>
+                </div>
+                <div class="lg:w-6/12 flex justify-center items-center lg:ml-8">
+                    <img src="images/gif1.gif" alt="CoConnect Platform" class="hero-image rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-16">Next-Gen Product Engagement</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div class="feature-card text-center p-6 rounded-lg shadow-lg bg-white">
+                        <img src="images/8.jpg" alt="Automated Dialogues" class="mb-6 mx-auto">
+                        <h3 class="text-xl font-semibold mb-4">Product Information</h3>
+                        <p class="text-gray-600">Access up-to-date specs, features, prices, and relevant attachments for any product offered.</p>
+                    </div>
+                    <div class="feature-card text-center p-6 rounded-lg shadow-lg bg-white">
+                        <img src="images/9.jpg" alt="Personalized Insights" class="mb-6 mx-auto">
+                        <h3 class="text-xl font-semibold mb-4">Intent Detection</h3>
+                        <p class="text-gray-600">Identifies user buying intent, directs to leads, and provides sales engineer contact details.</p>
+                    </div>
+                    <div class="feature-card text-center p-6 rounded-lg shadow-lg bg-white">
+                        <img src="images/12.jpg" alt="Financial Transparency" class="mb-6 mx-auto">
+                        <h3 class="text-xl font-semibold mb-4">AI Assistants</h3>
+                        <p class="text-gray-600">Accelerate and simplify processes for your customers through AI-driven intelligent automation.</p>
+                    </div>
+                    <div class="feature-card text-center p-6 rounded-lg shadow-lg bg-white">
+                        <img src="images/13.jpg" alt="Intelligent Automation" class="mb-6 mx-auto">
+                        <h3 class="text-xl font-semibold mb-4">Discover</h3>
+                        <p class="text-gray-600">Explore the latest product updates and initiatives. Stay informed about industry trends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-16">Understanding CoConnect</h2>
+                <div class="flex flex-col lg:flex-row items-center justify-between">
+                    <div class="lg:w-1/2 mb-12 lg:mb-0">
+                        <img src="images/7.png" alt="CoConnect Platform" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="lg:w-1/2 lg:pl-12">
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold mb-4">Custom Conversational AI</h3>
+                            <p class="text-gray-600">Build a conversational AI tailored to your company's needs.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold mb-4">Add Product Details</h3>
+                            <p class="text-gray-600">Sales engineers input product details in the admin dashboard.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold mb-4">Add AI Assistants</h3>
+                            <p class="text-gray-600">Customize AI agents to simplify and automate various customer workflows.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">Go Live & Monitor</h3>
+                            <p class="text-gray-600">Go live, monitoring lead generation, customer engagement, and more insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Engagement?</h2>
+                <p class="text-xl mb-8">Are you prepared to embrace the future of product engagement and personalization?</p>
+                <a href="#" class="btn-primary text-lg">Get a Demo</a>
+                <div class="mt-8 text-gray-600">
+                    <p>Email: <a href="mailto:email@example.com" class="text-blue-600">ramirahman@kedu.ae</a></p>
+                    <p>Phone: +971 50 769 6490</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 CoConnect. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

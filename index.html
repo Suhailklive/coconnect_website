@@ -7,58 +7,55 @@
     <link rel="icon" href="images/matcologo.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         
         :root {
-            --primary-color: #0055FF;
-            --text-color: #183B56;
-            --background-color: #F9FBFE;
+            --primary-color: #c1d830;
+            --secondary-color: #4a5568;
+            --accent-color: #3182ce;
+            --text-color: #2d3748;
+            --background-color: #f7fafc;
         }
         
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: var(--text-color);
         }
         
         .btn-primary {
             background-color: var(--primary-color);
-            color: white;
+            color: var(--text-color);
             padding: 12px 24px;
-            border-radius: 50px;
+            border-radius: 8px;
             font-weight: 600;
             transition: all 0.3s ease;
         }
         
         .btn-primary:hover {
-            background-color: #0044CC;
+            background-color: #afc42b;
+            transform: translateY(-2px);
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #0055FF 0%, #8C61FF 100%);
+            background: linear-gradient(135deg, #c1d830 0%, #3182ce 100%);
         }
         
         .hero-hello {
             font-size: 4rem;
-            line-height: 1;
+            line-height: 1.1;
             margin-bottom: 0.5rem;
+            color: var(--primary-color);
         }
         
         .hero-title {
             font-size: 2rem;
-            line-height: 1.2;
-        }
-        
-        .hero-image {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            max-height: 70vh;
+            line-height: 1.3;
+            color: white;
         }
         
         @media (min-width: 1024px) {
             .hero-hello {
                 font-size: 5rem;
-                margin-bottom: 0.75rem;
             }
             
             .hero-title {
@@ -69,21 +66,19 @@
 </head>
 
 <body class="bg-white">
-    <header class="bg-white border-b border-gray-200 fixed w-full z-10">
+    <header class="bg-[#f2f2f2] border-b border-gray-200 fixed w-full z-10">
         <nav class="container mx-auto px-4 sm:px-6 py-4">
             <div class="flex flex-wrap justify-between items-center">
                 <a href="https://kedu.ae/" class="flex items-center mb-2 sm:mb-0">
                     <img src="images/logo.png" alt="Kedu Logo" class="h-8 mr-4">
                 </a>
                 <div class="flex items-center w-full sm:w-auto justify-between sm:justify-end">
-                    <a href="#" class="text-2xl font-bold text-blue-600 mr-4 sm:mr-6">CoConnect</a>
-                    <a href="https://calendly.com/engineering-kedu/coconnect-demo " class="btn-primary text-sm sm:text-base" target="_blank">Get a Demo</a>
+                    <a href="#" class="text-2xl font-bold text-accent-color mr-4 sm:mr-6">CoConnect</a>
+                    <a href="https://calendly.com/engineering-kedu/coconnect-demo" class="btn-primary text-sm sm:text-base" target="_blank">Get a Demo</a>
                 </div>
             </div>
         </nav>
     </header>
-
-
 
     <main class="pt-16">
         <section class="gradient-bg min-h-screen flex items-center">
@@ -91,39 +86,39 @@
                 <div class="lg:w-5/12 text-white mb-12 lg:mb-0">
                     <h1 class="mb-4">
                         <span class="hero-hello font-bold block">Hello,</span>
-                        <span class="hero-title font-bold block">Personalized AI Sales Engineer</span>
+                        <span class="hero-title font-bold block tracking-tight">Personalized AI Sales Engineer</span>
+
                     </h1>
                     <p class="text-xl mb-8">Providing Real-Time Product Information and AI Automations</p>
-                    <a href="https://calendly.com/engineering-kedu/coconnect-demo " class="btn-primary bg-white text-blue-600 hover:bg-gray-100" target="_blank">Get a Demo</a>
+                    <a href="https://calendly.com/engineering-kedu/coconnect-demo" class="btn-primary bg-white text-accent-color hover:bg-gray-100" target="_blank">Get a Demo</a>
                 </div>
                 <div class="lg:w-6/12 flex justify-center items-center lg:ml-8">
-                    <img src="images/gif1.gif" alt="CoConnect Platform" class="hero-image rounded-lg shadow-2xl">
+                    <img src="images/gif1.gif" alt="CoConnect Platform" class="w-full h-auto object-contain max-h-70vh rounded-lg shadow-2xl">
                 </div>
             </div>
         </section>
-
 
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-16">Next-Gen Product Engagement</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    <div class="feature-card text-center p-6 rounded-lg shadow-lg bg-white">
-                        <img src="images/8.jpg" alt="Automated Dialogues" class="mb-6 mx-auto">
+                    <div class="text-center p-6 rounded-lg shadow-lg bg-white">
+                        <img src="images/8.jpg" alt="Product Information" class="mb-6 mx-auto">
                         <h3 class="text-xl font-semibold mb-4">Product Information</h3>
                         <p class="text-gray-600">Access up-to-date specs, features, prices, and relevant attachments for any product offered.</p>
                     </div>
-                    <div class="feature-card text-center p-6 rounded-lg shadow-lg bg-white">
-                        <img src="images/9.jpg" alt="Personalized Insights" class="mb-6 mx-auto">
+                    <div class="text-center p-6 rounded-lg shadow-lg bg-white">
+                        <img src="images/9.jpg" alt="Intent Detection" class="mb-6 mx-auto">
                         <h3 class="text-xl font-semibold mb-4">Intent Detection</h3>
                         <p class="text-gray-600">Identifies user buying intent, directs to leads, and provides sales engineer contact details.</p>
                     </div>
-                    <div class="feature-card text-center p-6 rounded-lg shadow-lg bg-white">
-                        <img src="images/12.jpg" alt="Financial Transparency" class="mb-6 mx-auto">
+                    <div class="text-center p-6 rounded-lg shadow-lg bg-white">
+                        <img src="images/12.jpg" alt="AI Assistants" class="mb-6 mx-auto">
                         <h3 class="text-xl font-semibold mb-4">AI Assistants</h3>
                         <p class="text-gray-600">Accelerate and simplify processes for your customers through AI-driven intelligent automation.</p>
                     </div>
-                    <div class="feature-card text-center p-6 rounded-lg shadow-lg bg-white">
-                        <img src="images/13.jpg" alt="Intelligent Automation" class="mb-6 mx-auto">
+                    <div class="text-center p-6 rounded-lg shadow-lg bg-white">
+                        <img src="images/13.jpg" alt="Discover" class="mb-6 mx-auto">
                         <h3 class="text-xl font-semibold mb-4">Discover</h3>
                         <p class="text-gray-600">Explore the latest product updates and initiatives. Stay informed about industry trends.</p>
                     </div>
@@ -160,24 +155,23 @@
             </div>
         </section>
 
-        <!-- Testimonial Section -->
-        <section class="py-20 testimonial-bg">
+        <section class="py-20 bg-white">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold mb-12">What Our Clients Say</h2>
-                <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
                     <blockquote class="text-2xl italic mb-8">
                         "CoConnect stands out for its ability to streamline product information access. The multiple AI assistants promise to automate our tasks and enhance our efficiency, transforming the future of interactions toward personalization."
                     </blockquote>
-                    <p class="font-semibold text-xl text-blue-600">— Customer Voice</p>
+                    <p class="font-semibold text-xl text-accent-color">— Customer Voice</p>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Engagement?</h2>
                 <p class="text-xl mb-8">Are you prepared to embrace the future of product engagement and personalization?</p>
-                <a href="https://calendly.com/engineering-kedu/coconnect-demo " class="btn-primary text-lg" target="_blank">Get a Demo</a>
+                <a href="https://calendly.com/engineering-kedu/coconnect-demo" class="btn-primary text-lg" target="_blank">Get a Demo</a>
             </div>
         </section>
     </main>
@@ -187,18 +181,8 @@
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
                 <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
                     <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
-                    <div class="flex items-center mb-2">
-                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M3.5 2.25C2.675 2.25 2 2.925 2 3.75v16.5C2 21.075 2.675 21.75 3.5 21.75h17c.825 0 1.5-.675 1.5-1.5V3.75c0-.825-.675-1.5-1.5-1.5h-17zm10.5 7.75h-8V8h8v2zM14 11H7v1h7v-1zm6.5 5.75h-3v-5.5H18v5.5z"/>
-                        </svg>
-                        <p>Email: <a href="mailto:ramzirahman@kedu.ae" class="hover:text-blue-300">ramzi@kedu.ae</a></p>
-                    </div>
-                    <div class="flex items-center mb-2">
-                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M6.62 10.79C7.06 12.73 8.5 14.17 10.44 14.61l1.11.2a2.01 2.01 0 01.33 0h.01a2 2 0 001.99-1.66c.2-.98.96-2.23 1.7-2.89.68-.63 1.34-1.29 1.34-2.22V3.75c0-.96-.78-1.75-1.75-1.75H4.75C3.78 2 3 2.78 3 3.75V20.25c0 .96.78 1.75 1.75 1.75H16.5c.96 0 1.75-.78 1.75-1.75V15a2 2 0 00-1.75-1.99H12c-2.5 0-4.39-1.92-4.39-4.32V9.11c0-1.02-.78-1.89-1.88-1.89h-.11V6.61C5.61 6.22 6 5.95 6 5.56v-.11z"/>
-                        </svg>
-                        <p>Phone: +971 55 798 1370</p>
-                    </div>
+                    <p>Email: <a href="mailto:ramzi@kedu.ae" class="hover:text-blue-300">ramzi@kedu.ae</a></p>
+                    <p>Phone: +971 55 798 1370</p>
                 </div>
                 
                 <div class="w-full sm:w-1/3 flex flex-col items-center mb-6 sm:mb-0">
@@ -224,3 +208,6 @@
                 <p>&copy; Developed by Longspur Technologies, in partnership with Kedu Technologies (GCC)</p>
             </div>
         </div>
+    </footer>
+</body>
+</html>
